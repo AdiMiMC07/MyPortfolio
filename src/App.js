@@ -1,13 +1,15 @@
 import './App.css';
 import About from './components/About';
 import MainSection from './components/MainSection';
-import Navbar from './components/Navbar';
+import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <MainSection/>
-    </div>
+      <About/>
+      <Skills />
+    </>
   );
 }
 

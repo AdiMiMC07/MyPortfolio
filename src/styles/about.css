@@ -1,0 +1,64 @@
+.about{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    max-height: calc(100%);
+    height: 100vh;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+    /* perspective: 20px; */
+    background-image: radial-gradient(rgba(193, 212, 224, 0.8), rgb(83, 85, 255));
+    z-index: 2;
+}
+.about *{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about-main{
+    width: clamp(50%,85vw,90%);
+    height: 60%;
+    background-color: rgba(244, 234, 230, 0.857);
+    /* padding: 1rem; */
+    border-radius: 2rem;
+}
+.about-main .about-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+@media (width<730px) {
+    .about-main .about-content{
+        flex-wrap: wrap;
+    }
+}
+.about-main .about-content .about-para{
+    /* border: 1px solid; */
+    font-size: 1rem;
+    border-right: 1px solid rgb(0, 55, 254);
+    padding: 1rem;
+    text-align: center;
+    /* justify-items: left; */
+}
+.about-main .about-content .about-para p{
+    width: 100%;
+    font-weight: 500;
+    font-size: large;
+}
+.about-main .about-content .about-para h2{
+    margin-bottom:3rem;
+    margin-top:2rem;
+    font-size : 2rem;
+    color: rgb(7, 27, 208);
+    text-decoration: underline;
+    text-underline-offset: .7rem;
+}
+.about-main .about-content .my-photo{
+    width: 40%;
+    margin: auto;
+}
+.about-main .about-content .my-photo img{
+    /* width: -webkit-fill-available; */
+    overflow: clip clip;
+    z-index: 2;
+}

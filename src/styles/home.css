@@ -1,0 +1,84 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.base {
+    position: relative;
+    scroll-snap-align: start;
+    width: 100%;
+    height: calc(100%);
+    background-image: linear-gradient(135deg, rgba(27, 149, 225, 0.8), rgb(15, 18, 201));
+    /* background-image: var(--gradient-two); */
+    z-index: 1;
+}
+
+.base p#name {
+    font-size: 4rem;
+    position: absolute;
+    text-align: center;
+    /* width: auto; */
+    top: 9rem;
+    left: 7rem;
+    font-weight: bold;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    background-position: right;
+    animation: name-anime 4s ease-in-out infinite alternate;
+}
+/* @keyframes name-anime {
+    0%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+} */
+
+.base p#intro-para {
+    font-size: 23px;
+    position: absolute;
+    top: 14rem;
+    width: 45%;
+    text-align: center;
+    left: 1.8rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.intro-cont {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../Union.svg');
+    /* background-position-x: calc(50% - 1rem);
+    background-position-y: calc(40% - 6rem); */
+    /* background-size: cover; */
+    background-repeat:round;
+    background-blend-mode: saturation;
+    background-color: rgba(0, 0, 0, .3);
+}
+.particles{
+    position: absolute !important;
+    height: 500px;
+    z-index: 0;
+}
+#pball-1{
+    position: relative;
+    top: 0;
+    left: 3rem;
+}
+#pball-2{
+    position: relative;
+    top: 0;
+    left: 40rem;
+}
+#pball-3{
+    position: relative;
+    top: 9rem;
+    left: 3rem;
+}
