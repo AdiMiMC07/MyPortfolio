@@ -54,11 +54,14 @@
     text-underline-offset: .7rem;
 }
 .about-main .about-content .my-photo{
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 .about-main .about-content .my-photo img{
     /* width: -webkit-fill-available; */
     overflow: clip clip;
     z-index: 2;
+    border-radius: 50%;
+    display: none;
+    
 }

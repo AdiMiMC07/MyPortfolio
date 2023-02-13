@@ -1,5 +1,5 @@
 .skills {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: relative;
 }
@@ -80,7 +80,7 @@
     margin: auto;
 }
 .skills-front {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: absolute;
     /* display: none; */

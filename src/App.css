@@ -13,12 +13,3 @@
 body {
   font-family: monospace;
 }
-.logo-img {
-  position: relative;
-  width: 30%;
-  height: 40%;
-  left: 30rem;
-  top: 12rem;
-  mix-blend-mode: normal;
-  z-index: 0;
-}

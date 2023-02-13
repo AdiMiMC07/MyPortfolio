@@ -30,6 +30,7 @@ nav ul li a {
     font-size: 22px;
     font-family: monospace;
     border-radius: 10%;
+    transition: all ease 300ms;
 }
 
 nav ul li a:hover {
@@ -48,6 +49,9 @@ nav ul li a:hover {
     align-items: center;
     background-color: indigo;
     border-radius: 50%;
+    outline : 0 solid orange;
+    transition : outline ease-in-out 100ms;
+    cursor: pointer;
 }
 
 #logo:hover {
