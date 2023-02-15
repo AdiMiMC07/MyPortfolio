@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../Vector 1.svg'
 import Navbar from './Navbar'
 import '../styles/home.css'
-import moon from '../moon.png'
+import moon from '../images/moon.png'
 // import astronaut from '../astronaut.png'
 const MainSection = () => {
     let X;

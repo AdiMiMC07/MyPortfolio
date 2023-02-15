@@ -5,10 +5,10 @@ const Skills = () => {
     const changePos = (e) => {
         let x = e.clientX;
         let y = e.clientY;
-        let xLine = window.innerWidth;
-        let yLine = window.innerHeight;
-        maskpos.current.style.maskPosition = `${(x / xLine) * 100}% ${(y / yLine) * 100}%`
-        maskpos.current.style.WebkitMaskPosition = `${(x / xLine) * 100}% ${(y / yLine) * 100}%`
+        let xline = maskpos.current.offsetWidth;
+        let yline = maskpos.current.offsetHeight;
+        maskpos.current.style.maskPosition = `${(x/xline)*100}% ${(y - 80/yline)*100}%`
+        maskpos.current.style.WebkitMaskPosition = `${(x/xline)*100}% ${((y-80)/yline)*100}%`
     }
     return (
         <>
