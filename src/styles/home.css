@@ -32,12 +32,14 @@
     background-position: right;
     animation: name-anime 4s ease-in-out infinite alternate;
 }
+
 @keyframes name-anime {
-    0%{
-        background-position: right;
+    0% {
+        content: "";
     }
-    100%{
-        background-position: left;
+
+    100% {
+        content:"adit"
     }
 }
 
@@ -56,62 +58,57 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    /* background-image: url('../Union.svg'); */
-    /* background-position-x: calc(50% - 1rem);
-    background-position-y: calc(40% - 6rem); */
-    /* background-size: cover; */
-    background-repeat:round;
+    background-repeat: round;
     background-blend-mode: saturation;
     background-color: rgba(0, 0, 0, .3);
     position: relative;
 }
-.intro-cont::after{
+
+.intro-cont::after {
     content: '';
     position: absolute;
     top: 35em;
     display: block;
-    height: 23em;
+    height: 28em;
     width: 100vw;
-    background-image: url("../images/Union.svg");
-    background-repeat: round;
-    animation: background-change 5s ease-in-out 0s infinite forwards;
-    animation-direction:normal;
+    /* background-image: url("../images/Union.svg");
+    background-repeat: round; */
 }
-@keyframes background-change {
-    from{
-        background-position-y: 0%;
-    }
-    to{
-        background-position-x:50%;
-    }
-}
-.particles{
-    position: absolute !important;
-    height: 500px;
-    z-index: 0;
-}
-#pball-1{
+
+
+#pball-1 {
     position: relative;
     top: 0;
     left: 3rem;
 }
-#pball-2{
+
+#pball-2 {
     position: relative;
     top: 0;
     left: 40rem;
 }
-#pball-3{
+
+#pball-3 {
     position: relative;
     top: 9rem;
     left: 3rem;
 }
 
 .logo-img {
-    position: relative;
+    position: absolute;
     width: 30%;
     height: 40%;
     left: 40%;
     top: 30%;
     mix-blend-mode: normal;
     z-index: 0;
-  }
+    animation: logo-bounce 2s ease-in-out 0s infinite alternate none;
+}
+/* @keyframes logo-bounce {
+    from{
+        top: 28%;
+    }
+    to{
+        top:33%;
+    }
+} */

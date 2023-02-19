@@ -1,0 +1,190 @@
+.Contact{
+    height: 100vh;
+    width:100vw;
+    background-image: url("../images/project_background3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.contact-form-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50vw;
+    transition: all ease 300ms;
+    background-color: rgba(0, 0, 0, 0.63);
+    position: relative;
+}
+.contact-form-area::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0%;
+    width: 100%;
+    background-image: linear-gradient(168deg,rgb(0, 0, 0) 50%,transparent 5%) ;
+    transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 300ms;
+}
+
+.contact-form-area::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-image: linear-gradient(-11deg,rgb(0, 0, 0) 50%,transparent 5%);
+    transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 300ms;
+}
+.contact-form-area:hover{
+    background-color: rgba(0, 0, 0, 0.723);
+}
+.contact-form-area:hover::before{
+    width: 100%;
+    height: 20%;
+}
+.contact-form-area:hover::after{
+    width: 100%;
+    height: 20%;
+    top: 80%;
+}
+.contact-form-area form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.contact-form-area form .main-form{
+    margin: auto;
+    height: 30%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.contact-form-area form .main-form input{
+    width: 80%;
+    margin: auto;
+    background: none;
+    border: 1px solid white;
+    height: 2em;
+    padding: .2rem;
+    color: white;
+    margin-bottom: 3rem;
+    border-radius: .5rem;
+}
+.contact-form-area form .main-form label{
+    display: block;
+    margin: .4rem 0;
+    /* font-family: sans-serif; */
+}
+.contact-form-area form .main-form textarea{
+    width: 80%;
+    height: 7em;
+    margin: auto;
+    min-width: 75%;
+    max-width: 85%;
+    min-height: 6em;
+    max-height: 8em;
+    padding: .2rem;
+    color: white;
+    background: none;
+    border-radius: .5rem;
+    border: 1px solid white;
+}
+.contact-form-area form .main-form .name{
+    position: relative;
+    margin-left: auto;
+    width: 90%;
+    margin-top: 1.5rem;
+}
+.contact-form-area form .main-form .name label{
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    transition: all ease 300ms;
+    font-size: small;
+}
+.contact-form-area form .main-form .name:has(>input:focus) label{
+    top: -2.5em;
+    left: 0;
+    font-size: large;
+}
+.contact-form-area form .main-form .name:has(>input:valid) label{
+    top: -2.5em;
+    left: 0;
+    font-size: large;
+}
+.contact-form-area form .main-form .emailID{
+    position: relative;
+    margin-left: auto;
+    width: 90%;
+}
+.contact-form-area form .main-form .emailID label{
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    transition: all ease 300ms;
+    font-size: small;
+}
+.contact-form-area form .main-form .emailID:has(>input:focus) label{
+    top: -2.5em;
+    left: 0;
+    font-size: large;
+}
+.contact-form-area form .main-form .emailID:has(>input:valid) label{
+    top: -2.5em;
+    left: 0;
+    font-size: large;
+}
+.contact-form-area form .main-form .message{
+    position: relative;
+    margin-left: auto;
+    width: 90%;
+}
+.contact-form-area form .main-form .message label{
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    transition: all ease 300ms;
+    font-size: small;
+}
+.contact-form-area form .main-form .message:has(>textarea:focus) label{
+    top: -2.5em;
+    left: 0;
+    font-size: large;
+}
+.contact-form-area form .main-form .message:has(>textarea:valid) label{
+    top: -2.5em;
+    left: 0;
+    font-size: large;
+}
+.contact-photo-area{
+    width: 50vw;
+    height: 100%;
+    background-color: rgba(0, 4, 56, 0.953);
+}
+.contact-form-area .main-form .form-btn{
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: 40%;
+    margin: 1rem;
+    align-self: center;
+    padding: .5rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    color: rgb(255, 255, 255);
+    background: none;
+    /* background-image: linear-gradient(45deg,rgb(0, 149, 255),rgb(11, 190, 2)); */
+    background-size: 300%;
+    transition: background-position ease 400ms;
+}
+.contact-form-area .main-form .form-btn:hover{
+    opacity: .8;
+    background-position: center;
+}

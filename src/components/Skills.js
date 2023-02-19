@@ -7,8 +7,8 @@ const Skills = () => {
         let y = e.clientY;
         let xline = maskpos.current.offsetWidth;
         let yline = maskpos.current.offsetHeight;
-        maskpos.current.style.maskPosition = `${(x/xline)*100}% ${(y - 80/yline)*100}%`
-        maskpos.current.style.WebkitMaskPosition = `${(x/xline)*100}% ${((y-80)/yline)*100}%`
+        maskpos.current.style.maskPosition = `${x-120}px ${y-140}px`
+        maskpos.current.style.WebkitMaskPosition = `${x-120}px ${y-140}px`
     }
     return (
         <>
