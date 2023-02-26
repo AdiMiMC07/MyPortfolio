@@ -5,63 +5,230 @@
     align-items: center;
     max-height: calc(100%);
     height: 100vh;
-    /* overflow-y: auto; */
-    /* overflow-x: hidden; */
-    /* perspective: 20px; */
-    background-image: radial-gradient(rgba(193, 212, 224, 0.8), rgb(83, 85, 255));
-    z-index: 2;
+    /* background-image: radial-gradient(rgba(193, 212, 224, 0.8), rgb(83, 85, 255)); */
+    /* background-image: linear-gradient(45deg,lime,red); */
+    background-image: url("../images/mathematics\ and\ code\ and\ machine\ learning.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: start;
+    position: relative;
 }
 .about *{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .about-main{
     width: clamp(50%,85vw,90%);
-    height: 60%;
-    background-color: rgba(244, 234, 230, 0.857);
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.614);
     /* padding: 1rem; */
-    border-radius: 2rem;
+    border-radius: 1rem;
+    /* outline: .1em solid rgb(26, 255, 0); */
+    /* outline: .1em solid rgba(57, 57, 57, 0.25); */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: .2em .2em 2.5em rgb(49, 49, 49);
+    display: none;
+}
+.about-main .macOs-header{
+    width: auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    outline: .1em solid rgb(57, 57, 57);
+    height: 7%;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .4rem;
+    /* z-index: 2; */
+}
+.about-main .macOs-header .about-title{
+    width: 15%;
+    background-color: rgba(111, 111, 111, 0.85);
+    text-align: center;
+    padding: .3rem;
+    border: .1em solid rgba(255, 255, 255, 0.737);
+    border-radius: .4em;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.about-main .macOs-header .header-btns{
+    display: flex;
+    gap: .5rem;
+    margin: 1.3rem;
+}
+.about-main .macOs-header .header-btns .close{
+    display: block;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: rgb(252, 63, 63);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.about-main .macOs-header .header-btns:hover .close::before{
+    content: "+";
+    position: absolute;
+    left: 22.5%;
+    top: -20%;
+    transform: rotate(45deg);
+    display: block;
+    color: black;
+    scale: 1.2;
+}
+.about-main .macOs-header .header-btns .minimise{
+    display: block;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: rgb(255, 242, 0);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.about-main .macOs-header .header-btns:hover .minimise::before{
+    content: "-";
+    position: absolute;
+    left: 22.5%;
+    top: -22.5%;
+    display: block;
+    color: black;
+    scale: 1.2;
+}
+.about-main .macOs-header .header-btns .expand{
+    display: block;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: lime;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.about-main .macOs-header .header-btns:hover .expand::before{
+    content:"";
+    position: absolute;
+    left: -99%;
+    top: -100%;
+    /* right: 50%;
+    bottom: 100%; */
+    display: block;
+    color: black;
+    scale: .37;
+    width: 2.7rem;
+    height: 2.7rem;
+    overflow: hidden;
+    border-radius: 50%;
+    background-image: url("../images/icons8-macos-full-screen-48.png");
+    background-repeat: no-repeat;
 }
 .about-main .about-content{
     display: flex;
-    height: 100%;
+    height: 91%;
     width: 100%;
     flex-direction: row;
 }
 @media (width<730px) {
-    .about-main .about-content{
-        flex-wrap: wrap;
+    .about-main{
+        width: 100%;
     }
 }
-.about-main .about-content .about-para{
+.about-main .about-content .about-navigation{
     /* border: 1px solid; */
     font-size: 1rem;
-    border-right: 1px solid rgb(0, 55, 254);
-    padding: 1rem;
+    border-right: 1px solid rgb(255 255 255 / 45%);
+    padding: .5rem;
     text-align: center;
-    /* justify-items: left; */
+    width: 30%;
 }
-.about-main .about-content .about-para p{
+.about-main .about-content .about-navigation ul{
     width: 100%;
-    font-weight: 500;
-    font-size: large;
+    /* font-weight: 500; */
+    font-size: medium;
+    list-style: none;
+    /* padding: .5rem; */
 }
-.about-main .about-content .about-para h2{
+.about-main .about-content .about-navigation li{
+    /* border: 1px solid; */
+    /* background-color: rgba(255, 255, 255, .1); */
+    width: 100%;
+    padding: .3rem 0;
+}
+.about-main .about-content .about-navigation li a{
+    text-decoration: none;
+    color: black;
+    padding: .25rem 0;
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
+}
+.about-main .about-content .about-navigation h2{
     margin-bottom:3rem;
     margin-top:2rem;
-    font-size : 2rem;
-    color: rgb(7, 27, 208);
-    text-decoration: underline;
-    text-underline-offset: .7rem;
+    font-size : 1.5rem;
 }
-.about-main .about-content .my-photo{
-    width: 50%;
+.about-main .about-content .about-navigation li a.active{
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+.about-main .about-content .my-text{
+    width: 70%;
+    height: 100%;
     margin: auto;
+    background-color: #faf2e9a7;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: .2em; */
 }
-.about-main .about-content .my-photo img{
-    /* width: -webkit-fill-available; */
-    overflow: clip clip;
-    z-index: 2;
-    border-radius: 50%;
-    display: none;
-    
+.about-main .about-content .my-text .frame{
+    overflow: hidden;
+    height: 60%;
+    background-color: #dbd4cb4a;
+    display: block;
+    width: 95%;
+    border: .125em solid #b9b3aa4a;
+    border-radius: .3em;
+}
+.about-main .about-content .my-text .frame #overview{
+    height: 100%;
+    display: block;
+    padding: 1rem;
+}
+.about-main .about-content .my-text .frame #hobbies{
+    padding: 1rem;
+    height: 100%;
+    display: block;
+}
+.about-main .about-content .my-text .frame #achievements{
+    display: block;
+    padding: 1rem;
+    height: 100%;
+}
+.about-main .about-content .my-text .frame .about-overviews p{
+    margin: .3rem 0;
+}
+.about-main .about-content .about-navigation .profile{
+    /* border: 1px solid; */
+    margin-bottom: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-main .about-content .about-navigation .profile .profile-pic{
+    filter: invert(1);
+    opacity: .85;
+}
+.about .application{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 4em;
+    text-align: center;
+    color: rgb(248, 248, 248);
+}
+.about .application img{
+    border-radius: .5em;
+    background-color: #fffcfcc7;
 }

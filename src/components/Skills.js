@@ -5,14 +5,22 @@ const Skills = () => {
     const changePos = (e) => {
         let x = e.clientX;
         let y = e.clientY;
-        let xline = maskpos.current.offsetWidth;
-        let yline = maskpos.current.offsetHeight;
+        // let xline = maskpos.current.offsetWidth;
+        // let yline = maskpos.current.offsetHeight;
+        maskpos.current.style.maskPosition = `${x-120}px ${y-140}px`
+        maskpos.current.style.WebkitMaskPosition = `${x-120}px ${y-140}px`
+    }
+    const changePosOnPhone = (e) => {
+        let x = e.touches[0].clientX;
+        let y = e.touches[0].clientY;
+        // let xline = maskpos.current.offsetWidth;
+        // let yline = maskpos.current.offsetHeight;
         maskpos.current.style.maskPosition = `${x-120}px ${y-140}px`
         maskpos.current.style.WebkitMaskPosition = `${x-120}px ${y-140}px`
     }
     return (
         <>
-            <div className="skills">
+            <div className="skills" id="skills">
                 <div className="main-skills">
                     <div className="webdev">
                         <div className="webd-card">
@@ -53,7 +61,13 @@ const Skills = () => {
                     </div>
 
                 </div>
-                <div className="skills-front" ref={maskpos} onMouseMove={(e) => {
+                <div className="skills-front" ref={maskpos} onTouchStart={(e)=>{
+                    e.preventDefault();
+                    changePosOnPhone(e)
+                }} onTouchMove={(e)=>{
+                    e.preventDefault()
+                    changePosOnPhone(e);
+                }} onMouseMove={(e) => {
                     changePos(e);
                 }}>
                 </div>

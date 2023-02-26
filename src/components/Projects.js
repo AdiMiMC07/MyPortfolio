@@ -1,12 +1,11 @@
 import React from 'react'
 import '../styles/projects.css'
 import photo from '../images/meInMetaverse.png'
-import background from '../images/project_background2.png'
 import myProjects from '../myprojects'
 const Projects = () => {
     return (
         <>
-        <div className="Projects">
+        <div className="Projects" id="projects">
             <div className="projects-palette">
                 <div className="me-svg">
                     <h2 className='main-title'>PROJECTS</h2>
@@ -15,7 +14,7 @@ const Projects = () => {
                 <div className="project-section">
 
                     {myProjects.map((proj,index)=>{
-                    return <div className="project-item" key={index} style={{width:`49%`}}>
+                    return <div className="project-item" key={index}>
                         <div className="project-card">
                             <div className="project-card-background">
                                 <img src={proj.img} alt="proj-1_photo" />

@@ -15,3 +15,23 @@ body{
 body {
   font-family: monospace;
 }
+.App{
+    scroll-snap-type:y mandatory;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+.home-section-app{
+  scroll-snap-align: start;
+}
+.about-section-app{
+  scroll-snap-align: start;
+}
+.skills-section-app{
+  scroll-snap-align:center;
+}
+.projects-section-app{
+  scroll-snap-align: start;
+}
+.contact-section-app{
+  scroll-snap-align: start;
+}

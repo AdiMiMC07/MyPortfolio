@@ -3,7 +3,7 @@ import images from "./images/index"
 const projs = [
     {
         title:"DeCyber",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laboriosam magni nemo praesentium dignissimos nam nostrum voluptates ducimus vitae",
+        desc:"DeCyber is an online cryptic hunt competition,I and my friend made this webapp for the competition which saw great amount of participants,storming their minds to crack the questions.",
         github:"https://github.com/AdiMiMC07/DeCyber-Aditya/tree/main",
         live:"https://decyber.vercel.app",
         img:images.decyber

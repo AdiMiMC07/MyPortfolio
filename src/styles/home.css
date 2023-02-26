@@ -3,10 +3,8 @@
     height: 100vh;
     position: relative;
 }
-
 .base {
     position: relative;
-    scroll-snap-align: start;
     width: 100%;
     height: calc(100%);
     /* background-image: linear-gradient(135deg, rgba(27, 149, 225, 0.8), rgb(15, 18, 201)); */
@@ -35,11 +33,11 @@
 
 @keyframes name-anime {
     0% {
-        content: "";
+        background-position-x: left;
     }
 
     100% {
-        content:"adit"
+        background-position-x: right;
     }
 }
 
@@ -76,24 +74,6 @@
 }
 
 
-#pball-1 {
-    position: relative;
-    top: 0;
-    left: 3rem;
-}
-
-#pball-2 {
-    position: relative;
-    top: 0;
-    left: 40rem;
-}
-
-#pball-3 {
-    position: relative;
-    top: 9rem;
-    left: 3rem;
-}
-
 .logo-img {
     position: absolute;
     width: 30%;
@@ -104,11 +84,29 @@
     z-index: 0;
     animation: logo-bounce 2s ease-in-out 0s infinite alternate none;
 }
-/* @keyframes logo-bounce {
+@media (width<=412px) {
+    .base p#name{
+        top: 5rem;
+        left: 0rem;
+        font-size: 3.5rem;
+    }
+    .base p#intro-para{
+        left: 0;
+        width: 100%;
+        font-size: 18px;
+    }
+    .logo-img{
+        transform: scale(1.9);
+        left: 30%;
+        width: 40%;
+        top: 35%;
+    }
+}
+@keyframes logo-bounce {
     from{
-        top: 28%;
+        top: 35%;
     }
     to{
-        top:33%;
+        top:40%;
     }
-} */
+}
