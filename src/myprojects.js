@@ -10,35 +10,35 @@ const projs = [
     },
     {
         title:"Tagit",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laboriosam magni nemo praesentium dignissimos nam nostrum voluptates ducimus vitae",
+        desc:"Tagit is an online social media platform wherein people can share their posts with their target audience,it is beneficial for the societies and associations to make announcements for their workers.",
         github:"https://github.com/AdiMiMC07/Tagit",
         live:"/",
         img:images.tagit
     },
     {
         title:"NotesMan",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laboriosam magni nemo praesentium dignissimos nam nostrum voluptates ducimus vitae",
+        desc:"NotesMan is a mern app which helps different users to save their notes.",
         github:"https://github.com/AdiMiMC07/NotesMan",
         live:"/",
         img:images.notesman
     },
     {
         title:"WeatherGuide",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laboriosam magni nemo praesentium dignissimos nam nostrum voluptates ducimus vitae",
+        desc:"WeatherGuide provides you the current weather and 8-day daily weather forecast data with a comfortable and minimalistic UI",
         github:"https://github.com/AdiMiMC07/WeatherGuide",
         live:"https://weatherguide-by-aditya-mishra.netlify.app",
         img:images.weatherguide
     },
     {
         title:"NewsKabutar",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laboriosam magni nemo praesentium dignissimos nam nostrum voluptates ducimus vitae",
+        desc:"NewsKabutar provides you real time news of various categories like politics,sports,cinema,general,technology and many more,the news data is being fetched from 'newsapi'",
         github:"https://github.com/AdiMiMC07/NewsApp",
         live:"/",
         img:images.newskabutar
     },
     {
         title:"TextUtils",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laboriosam magni nemo praesentium dignissimos nam nostrum voluptates ducimus vitae",
+        desc:"TextUtils is a simple text utility web application which helps you to transform your text like from uppercase to lowercase and vice-versa,invert the text,replicate text,etc.",
         github:"https://github.com/AdiMiMC07/TextUtility-React",
         live:"https://textutils-by-aditya-mishra.netlify.app",
         img:images.textutils

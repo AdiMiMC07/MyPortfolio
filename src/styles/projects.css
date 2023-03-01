@@ -95,6 +95,7 @@
 }
 .project-card-overlay .project-details{
     margin: .5rem auto;
+    padding: .5em;
 }
 .project-card-overlay .navigations{
     margin:1rem;

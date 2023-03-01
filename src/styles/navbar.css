@@ -62,18 +62,24 @@ nav ul li a:hover {
     cursor: pointer;
 }
 #logo::before{
-    content: "";
-}
-#logo:hover::before {
-    transition: all ease 500ms;
     content: '';
     position: absolute;
     top: -.3rem;
     left: -.3rem;
     right: -.3rem;
     bottom: -.3rem;
-    border: .29rem solid orange;
+    border: 0 solid orange;
     border-radius: 50%;
+    transition: all ease 200ms;
+}
+#logo:hover::before {
+    content: '';
+    top: -.3rem;
+    left: -.3rem;
+    right: -.3rem;
+    bottom: -.3rem;
+    border-width: .3rem;
+    /* border: .3rem solid orange; */
 }
 
 #logo>img {
