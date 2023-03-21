@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: auto 0 5em auto;
     font-size: large;
     /* padding: 1rem; */
 }
@@ -60,7 +60,7 @@
     /* padding: 1rem; */
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: auto auto 5em 0;
 }
 
 .languages {
@@ -76,7 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 5em 0 auto auto;
 }
 
 .skill-icon {
@@ -116,24 +116,24 @@
     /* transition: 0.1s; */
 }
 
-@media (width>=600px) {
+@media (width>=675px) {
     .webdev {
-        width: 13rem;
+        width: 15rem;
         aspect-ratio: 1;
     }
 
     .tools {
-        width: 13rem;
+        width: 15rem;
         aspect-ratio: 1;
     }
 
     .languages {
-        width: 13rem;
+        width: 15rem;
         aspect-ratio: 1;
     }
 }
 
-@media (390px<=width<=500px) {
+@media (390px<=width<=550px) {
     .main-skills {
         grid-template-areas:
             "web tools"
@@ -146,6 +146,7 @@
         aspect-ratio: 1;
         overflow: scroll;
         border-radius: 10%;
+        margin: auto auto 0 auto;
     }
     .skills-title{
         width: 10rem;
@@ -155,37 +156,42 @@
         width: 12rem;
         aspect-ratio: 1;
         border-radius: 10%;
+        margin: auto auto 0 auto;
     }
     
     .languages {
         width: 12rem;
         border-radius: 10%;
         aspect-ratio: 1;
+        margin: 0 auto auto auto;
     }
 }
 @media (width<390px) {
     .main-skills {
         grid-template-areas:
-            "web tools"
+            "web web"
             "title title"
-            "lang ."
+            "lang tools"
         ;
     }
     .webdev{
-        width: 8rem;
-        aspect-ratio: 1;
+        width: 62.5%;
         border-radius: 10%;
-        /* padding: .9rem; */
+        height: 11.5rem;
         text-align: center;
+        margin: auto auto 0 auto;
     }
     .tools{
         border-radius: 10%;
-        width: 8rem;
-        aspect-ratio: 1;
+        width:80%;
+        height: 8rem;
+        margin: 0 auto 0 auto;
     }
     .languages{
         border-radius: 10%;
-        width: 8rem;
+        width:80%;
+        height: 8rem;
+        margin: 0 auto 0 auto;
     }
     .skills-title{
         width: 10rem;

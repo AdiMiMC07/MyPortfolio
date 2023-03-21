@@ -1,7 +1,7 @@
 .Contact{
     height: 100vh;
     width:100vw;
-    background-image: url("../images/project_background3.png");
+    /* background-image: url("../images/project_background3.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -70,8 +70,8 @@
     margin: auto;
     background: none;
     border: 1px solid white;
-    height: 2em;
-    padding: .2rem;
+    height: 2.5em;
+    padding: .4rem;
     color: white;
     margin-bottom: 3rem;
     border-radius: .5rem;
@@ -79,7 +79,6 @@
 .contact-form-area form .main-form label{
     display: block;
     margin: .4rem 0;
-    /* font-family: sans-serif; */
 }
 .contact-form-area form .main-form textarea{
     width: 80%;
@@ -174,29 +173,12 @@
     border-radius: .5rem;
     color: rgb(255, 255, 255);
     background: none;
-    /* background-image: linear-gradient(45deg,rgb(0, 149, 255),rgb(11, 190, 2)); */
     background-size: 300%;
     transition: background-position ease 400ms;
 }
 .contact-form-area .main-form .form-btn:hover{
     opacity: .8;
     background-position: center;
-}
-.contact-photo-area{
-    width: 50vw;
-    height: 100%;
-    background-color: rgba(0, 4, 56, 0.953);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-.contact-photo-area .contact-socials-disp{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .contact-title{
     color: white;
@@ -208,17 +190,65 @@
     top: 15%;
     left: 30%;
 }
+.my-location-on-map{
+    width: 50vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    border-right: .25em white solid;
+}
+.my-location-on-map img{
+    border: .5em white dashed;
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+.contact-photo-area{
+    width: 50vw;
+    height: 100%;
+    /* background-color: rgba(0, 4, 56, 1); */
+    display: flex;
+    border-left: .25em white solid;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    /* background-image: url("");
+    background-size: 30%; */
+}
+.contact-photo-area:before{
+    transition: opacity 350ms ease;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-size: 25%;
+    background-repeat: round;
+}
+.contact-photo-area .contact-socials-disp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
 .contact-photo-palette{
     width: 80%;
-    height: 30%;
-    background-color: aliceblue;
+    height: 25%;
+    /* background-color: aliceblue; */
+    background-image: linear-gradient(120deg,peachpuff,rgba(0, 162, 255, 0.806),red);
     transform-style: preserve-3d;
     transform: perspective(1000px);
     border-radius: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 1rem; */
 }
 .github{
     position: relative;
@@ -249,7 +279,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.613);
+    background-color: rgba(0, 0, 0, 0.747);
     filter: blur(10px);
     border-radius: 50%;
     inset: 0rem;
@@ -266,7 +296,10 @@
 .github-logo:hover path{
     fill: #fff;
 }
-
+.contact-photo-area:has(.github-logo:hover):before{
+    background-image: url("../images/github.svg");
+    opacity: 1;
+}
 .linkedin{
     position: relative;
     transform-style: preserve-3d;
@@ -308,10 +341,15 @@
 .linkedin-logo:hover{
     opacity: .7;
 }
+.contact-photo-area:has(.linkedin-logo:hover):before{
+    background-image: url("../images/linkedin.svg");
+    opacity: 1;
+}
 .email-ID{
     position: relative;
     transform-style: preserve-3d;
     transform: translateZ(30px);
+    
 }
 .email-ID::before{
     content: '';
@@ -350,6 +388,15 @@
 .gmail-logo:hover{
     opacity:.7;
 }
+.contact-photo-area:has(.gmail-logo:hover):before{
+    background-image: url("../images/mail_app.svg");
+    opacity: 1;
+}
+/* Here goes my location on map */
+/* .my-location-on-map{
+    width: 50vw;
+    height: 100vh;
+} */
 @media (width<=412px){
     .Contact{
         flex-direction: column-reverse;
@@ -359,6 +406,8 @@
     }
     .contact-photo-area{
         width: 100vw;
+        border-left: none;
+        border-bottom: #fff .1em solid;
     }
     .contact-form-area form .main-form{
         width: 70%;
@@ -373,10 +422,17 @@
         top: 19%;
     }
     .contact-photo-palette{
-        height: 50%;
+        height: 52.5%;
+        width: 90%;
     }
     .contact-photo-area .contact-socials-disp{
         margin-top: auto;
         height: 85%;
+        top: 15%;
+    }
+    .my-location-on-map{
+        width: 100vw;
+        border-top: #fff .1em solid;
+        border-right: none;
     }
 }

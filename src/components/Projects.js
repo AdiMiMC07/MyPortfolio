@@ -9,7 +9,12 @@ const Projects = () => {
             <div className="projects-palette">
                 <div className="me-svg">
                     <h2 className='main-title'>PROJECTS</h2>
-                    <img className='avatar' src={photo} alt="" width={"100%"}/>
+                    <div className="inner">
+                        <div className="background-peach">
+                            
+                        </div>
+                        <img className='avatar' src={photo} alt="" width={"100%"}/>
+                    </div>
                 </div>
                 <div className="project-section">
 

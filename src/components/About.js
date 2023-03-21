@@ -17,7 +17,6 @@ const About = () => {
                         aboutWindow.current.style.opacity = "1";
                         element.style.display = "none";
                     }
-                    aboutWindow.current.style.display = "block"
                 }}>
                     <img src={photo} alt="" width={"100%"} />
                     <span style={{ fontWeight: "600", fontSize: "small", textShadow: ".15em .15em .5em black" }}>About</span>
@@ -26,30 +25,24 @@ const About = () => {
                     <div className="macOs-header">
                         <div className="header-btns">
                             <span className="close" onClick={() => {
-                                aboutWindow.current.style.display = "none";
+                                aboutWindow.current.style.opacity = "0";
+                                aboutWindow.current.style.width = "10%";
+                                aboutWindow.current.style.height = "20%";
+                                aboutWindow.current.style.left = "-33%";
+                                aboutWindow.current.style.top = "-5%";
                             }}></span>
                             <span className="minimise" onClick={() => {
                                 let element = document.querySelector('.profile-in-dock');
                                 if (aboutWindow.current.style.opacity !== "0") {
-                                    aboutWindow.current.style.width = "10%";
+                                    aboutWindow.current.style.width = "20%";
                                     aboutWindow.current.style.height = "20%";
-                                    aboutWindow.current.style.left = "30%";
+                                    aboutWindow.current.style.left = "24%";
                                     aboutWindow.current.style.top = "30%";
                                     aboutWindow.current.style.opacity = "0";
-                                    element.style.display = "block";
+                                    element.style.display = "flex";
                                 }
                             }}></span>
-                            <span className="expand" onClick={() => {
-                                if (aboutWindow.current.style.width !== "100%") {
-                                    aboutWindow.current.style.width = "100%";
-                                    aboutWindow.current.style.height = "95%";
-                                    aboutWindow.current.style.marginTop = "5em"
-                                }
-                                else {
-                                    aboutWindow.current.style.width = "90%";
-                                    aboutWindow.current.style.height = "75%";
-                                }
-                            }}>
+                            <span className="expand">
                             </span>
                         </div>
                         <div className="about-title">
@@ -60,7 +53,7 @@ const About = () => {
                         <div className="about-navigation">
                             <h2 className="navigation-heading">About Me</h2>
                             <div className="profile">
-                                <img src={photo} alt="aditya mishra" className="profile-pic" />
+                                <img src={photo} alt="aditya mishra" className="profile-pic" width={"25%"}/>
                                 <h4>Aditya Mishra</h4>
                             </div>
                             <hr style={{ borderColor: "#b9b3aa4a" }} />
@@ -106,22 +99,34 @@ const About = () => {
                                     <h3 style={{ textAlign: 'center', margin: ".3em 0" }}>Overview</h3>
                                     <hr style={{ borderColor: "#b9b3aa4a" }} />
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error labore excepturi maxime enim reprehenderit nesciunt! Nemo voluptates, vel eius odio ut nostrum assumenda porro totam explicabo magnam reprehenderit necessitatibus.
+                                        Hello, I am Aditya Mishra , 🙋‍♂️. I am a sophomore at Delhi Technological University, Delhi. Right now I am pursuing a 🎓 degree of bachelor's of technology in Mathematics and Computing Engineering.
                                     </p>
                                 </div>
                                 <div id="hobbies" className='about-overviews'>
                                     <h3 style={{ textAlign: 'center', margin: ".3em 0" }}>Hobbies</h3>
-                                    <hr style={{ borderColor: "#b9b3aa4a" }} />
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus recusandae hic aliquid iusto consequuntur aut numquam eveniet omnis voluptatem officiis corporis, ipsa nisi eius dolores odit! Hic quo eos dolorum! Lorem ipsum dolor sit amet.
-                                    </p>
+                                    <hr/>
+                                    <ul>
+                                        <li><span>I love to play Football <span>⚽️</span></span>
+                                        </li>
+                                        <hr/>
+                                        <li><span>Sometimes I play chess as well <span> ♔♚</span></span></li>
+                                        <hr />
+                                        <li><span>I watch memes in my free time <span className='memes'>🤣</span></span></li>
+                                        <hr/>
+                                        <li><span>I watch movies as well,RRR,my favourite <span className='movies'>🐎 🏍️</span></span></li>
+
+                                    </ul>
                                 </div>
                                 <div id="achievements" className='about-overviews'>
                                     <h3 style={{ textAlign: 'center', margin: ".3em 0" }}>Achievements</h3>
-                                    <hr style={{ borderColor: "#b9b3aa4a" }} />
-                                    <p>
-                                        Yeh meri achievements hain ekdum khali heheheheheh
-                                    </p>
+                                    <hr style={{ borderColor: "#b9b6b236" ,marginBottom:".75em"}} />
+                                    <ul>
+                                        <li><span className='timestamp'>Feb - 2023</span> || I was selected as a webdev intern in the Univerity Students Internship Program (USIP) DTU</li>
+                                        <hr />
+                                        <li><span className='timestamp'>Jan - 2023</span> || I got an opportunity to become a technical head at Mathematics and Computing Society-DTU</li>
+                                        <hr />
+                                        <li><span className='timestamp'>Dec - 2021</span> || I was among the top 10% students to qualify for the IIT Entrance Exam (JEE Adv)</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -130,12 +135,12 @@ const About = () => {
                 <div className="about-footer">
                     <div className="footer-content">
                         <div className="main-dock-icons">
-                            <span className="about-footer-icons"><img src={icons.icons.terminal} alt="" style={{ width: "50%", margin: "auto" }} /></span>
-                            <span className="about-footer-icons"><img src={icons.icons.vscode} alt="" style={{ width: "50%", margin: "auto" }} /></span>
-                            <span className="about-footer-icons chrome-dotted"><img src={icons.icons.chrome} alt="" style={{ width: "50%", margin: "auto" }} /></span>
-                            <span className="about-footer-icons"><img src={icons.icons.safari} alt="" style={{ width: "50%", margin: "auto" }} /></span>
-                            <span className="about-footer-icons"><img src={icons.icons.mail} alt="" style={{ width: "50%", margin: "auto" }} /></span>
-                            <span className="about-footer-icons" style={{boxShadow:".1em 0 0 0 black"}}><img src={icons.icons.settings} alt="" style={{ width: "50%", margin: "auto" }} /></span>
+                            <span className="about-footer-icons"><img src={icons.icons.terminal} alt=""/></span>
+                            <span className="about-footer-icons"><img src={icons.icons.vscode} alt=""/></span>
+                            <span className="about-footer-icons chrome-dotted"><img src={icons.icons.chrome} alt="" /></span>
+                            <span className="about-footer-icons"><img src={icons.icons.safari} alt="" /></span>
+                            <span className="about-footer-icons"><img src={icons.icons.mail} alt="" /></span>
+                            <span className="about-footer-icons" style={{boxShadow:".1em 0 0 0 black"}}><img src={icons.icons.settings} alt="" /></span>
                             <span className="about-footer-icons profile-in-dock" onClick={() => {
                                 let element = document.querySelector(".profile-in-dock")
                                 aboutWindow.current.style.width = "90%";
@@ -144,7 +149,7 @@ const About = () => {
                                 aboutWindow.current.style.top = "0%";
                                 aboutWindow.current.style.opacity = "1";
                                 element.style.display = "none";
-                            }}><img src={icons.icons.profile} alt="" style={{ width: "50%", margin: "auto" }} /></span>
+                            }}><img src={icons.icons.profile} alt="" /></span>
                         </div>
                     </div>
                 </div>
