@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import logo from '../Vector 1.svg'
 import '../styles/navbar.css'
 import mult from '../images/crosssymbol.png'
-import resume from '../Resume.pdf'
+import resume from '../resume.pdf'
 const Navbar = () => {
     const navbar = useRef()
     return (
