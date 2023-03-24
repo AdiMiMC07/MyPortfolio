@@ -31,7 +31,7 @@ const projs = [
     },
     {
         title:"NewsKabutar",
-        desc:"NewsKabutar provides you real time news of various categories like politics,sports,cinema,general,technology and many more,the news data is being fetched from 'newsapi'",
+        desc:"NewsKabutar provides you real time news of various categories like politics,cinema,technology and many more,the news data is being fetched from 'newsapi'",
         github:"https://github.com/AdiMiMC07/NewsApp",
         live:"/",
         img:images.newskabutar

@@ -36,7 +36,7 @@ const About = () => {
                                 if (aboutWindow.current.style.opacity !== "0") {
                                     aboutWindow.current.style.width = "20%";
                                     aboutWindow.current.style.height = "20%";
-                                    aboutWindow.current.style.left = "24%";
+                                    aboutWindow.current.style.left = "clamp(10%,20%,30%)";
                                     aboutWindow.current.style.top = "30%";
                                     aboutWindow.current.style.opacity = "0";
                                     element.style.display = "flex";
