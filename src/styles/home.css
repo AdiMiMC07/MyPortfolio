@@ -93,7 +93,9 @@
     text-align: center;
     /* width: auto; */
     top: 9rem;
-    left: clamp(0%,5%,10%);
+    left: 10vw;
+    right: auto;
+    margin-inline: auto;
     font-weight: bold;
     background-image: var(--gradient);
     background-clip: text;
@@ -213,7 +215,7 @@
 @media (1000px>width>500px) {
     .base p#name{
         top: 8rem;
-        left: clamp(5%,8%,12%);
+        left: 12vw;
         font-size: 3.5rem;
     }
     .base p#intro-para{
