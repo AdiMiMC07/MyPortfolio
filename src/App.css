@@ -8,7 +8,7 @@ body{
 }
 :root {
   --bgcolor: rgb(4, 127, 208);
-  --gradient: linear-gradient(45deg, rgb(246, 136, 32), rgb(255, 200, 0), #e13314);
+  --gradient: linear-gradient(45deg, rgb(32, 246, 171), rgb(0, 242, 255), #145fe1);
   --clr: #e13314;
   --gradient-two:linear-gradient(45deg,lime,aquamarine);
 }
