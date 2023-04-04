@@ -253,22 +253,7 @@
 .github{
     position: relative;
     transform-style: preserve-3d;
-    transform: translateZ(30px);
-}
-.github::before{
-    content: '';
-    width: 99px;
-    height: 99px;
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(14, 12, 60);
-    /* z-index: -1; */
-    transform: translateZ(-1px);
-    border-radius: 50%;
-    pointer-events: none;
+    /* transform: translateZ(30px); */
 }
 .github::after{
     content: '';
@@ -283,41 +268,28 @@
     filter: blur(10px);
     border-radius: 50%;
     inset: 0rem;
-    transform: translateZ(-30px);
+    z-index: -1;
+    /* transform: translateZ(-30px); */
 }
 .github-logo{
     transition: background-color 200ms linear;
     border-radius: 50%;
     background-color: white;
+    transform: translateZ(31px);
 }
-.github-logo:hover{
+.github:hover .github-logo{
     background-color: black;
 }
-.github-logo:hover path{
+.github:hover .github-logo path{
     fill: #fff;
 }
-.contact-photo-area:has(.github-logo:hover):before{
+.contact-photo-area:has(.github:hover):before{
     background-image: url("../images/github.svg");
     opacity: 1;
 }
 .linkedin{
     position: relative;
     transform-style: preserve-3d;
-    transform: translateZ(30px);
-}
-.linkedin::before{
-    content: '';
-    width: 96px;
-    height: 96px;
-    position: absolute;
-    top: -0px;
-    left: -0px;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(14, 12, 60);
-    /* z-index: -1; */
-    transform: translateZ(-1px);
-    border-radius: 20%;
 }
 .linkedin::after{
     content: '';
@@ -332,39 +304,24 @@
     filter: blur(10px);
     border-radius: 20%;
     inset: 0rem;
-    transform: translateZ(-30px);
+    z-index: -1;
+    /* transform: translateZ(-30px); */
 }
 .linkedin-logo{
     transition: opacity 200ms linear;
     border-radius: 50%;
+    transform: translateZ(31px);
 }
-.linkedin-logo:hover{
-    opacity: .7;
-}
-.contact-photo-area:has(.linkedin-logo:hover):before{
+.contact-photo-area:has(.linkedin:hover):before{
     background-image: url("../images/linkedin.svg");
     opacity: 1;
 }
 .email-ID{
     position: relative;
     transform-style: preserve-3d;
-    transform: translateZ(30px);
-    
+    /* transform: translateZ(30px); */
 }
-.email-ID::before{
-    content: '';
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(14, 12, 60);
-    /* z-index: -1; */
-    transform: translateZ(-1px);
-    border-radius: 50%;
-}
+
 .email-ID::after{
     content: '';
     width: 96px;
@@ -378,25 +335,21 @@
     filter: blur(10px);
     border-radius: 50%;
     inset: 0rem;
-    transform: translateZ(-30px);
+    z-index: -1;
+    /* transform: translateZ(-30px); */
 }
 .gmail-logo{
     transition: opacity 200ms linear;
     border-radius: 50%;
     background-color: black;
+    transform: translateZ(31px);
 }
-.gmail-logo:hover{
-    opacity:.7;
-}
-.contact-photo-area:has(.gmail-logo:hover):before{
+.contact-photo-area:has(.email-ID:hover):before{
     background-image: url("../images/mail_app.svg");
     opacity: 1;
 }
 /* Here goes my location on map */
-/* .my-location-on-map{
-    width: 50vw;
-    height: 100vh;
-} */
+
 @media (width<=412px){
     .Contact{
         flex-direction: column-reverse;
