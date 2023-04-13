@@ -5,7 +5,12 @@ import MainSection from './components/MainSection';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-
+import
+ { Analytics } 
+from
+ 
+'@vercel/analytics/react'
+;
 function App() {
   
   return (
@@ -30,6 +35,7 @@ function App() {
           <Contact/>
         </div>
       </div>
+      <Analytics />
     </>
   );
 }
