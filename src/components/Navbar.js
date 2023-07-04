@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import logo from '../Vector 1.svg'
 import '../styles/navbar.css'
 import mult from '../images/crosssymbol.png'
-import resume from '../myresume.pdf'
 const Navbar = () => {
     const navbar = useRef()
     return (
@@ -23,7 +22,7 @@ const Navbar = () => {
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href={resume} download>Resume</a></li>
+                    <li><a href={"https://drive.google.com/file/d/1oSFQFOf9N8PFkztT9xNpROsO8sX0Y0uW/view?usp=sharing"} target='_blank' rel="noreferrer">Resume</a></li>
                 </ul>
             </nav>
         </>
