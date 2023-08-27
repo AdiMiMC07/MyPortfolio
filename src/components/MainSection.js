@@ -23,7 +23,7 @@ const MainSection = () => {
                             <p id="name">ADITYA MISHRA</p>
                             <p id="intro-para">
                                 Hi, I am Aditya Mishra,<br />
-                                Frontend Developer and a sophomore majoring in
+                                Full Stack Web Developer and a 3rd yr student majoring in
                                 Mathematics and
                                 Computer Science</p>
                             {/* <img className="logo-img pballs" data-speed="0.71" src={logo} alt="" /> */}
