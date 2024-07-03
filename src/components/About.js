@@ -99,7 +99,7 @@ const About = () => {
                                     <h3 style={{ textAlign: 'center', margin: ".3em 0" }}>Overview</h3>
                                     <hr style={{ borderColor: "#b9b3aa4a" }} />
                                     <p>
-                                        Hello, I am Aditya Mishra , 🙋‍♂️. I am a sophomore at Delhi Technological University, Delhi. Right now I am pursuing a 🎓 degree of bachelor's of technology in Mathematics and Computing Engineering.
+                                        Hello, I am Aditya Mishra , 🙋‍♂️. I am a 3rd year student at Delhi Technological University, Delhi. Right now I am pursuing a 🎓 degree of bachelor's of technology in Mathematics and Computing Engineering.
                                     </p>
                                 </div>
                                 <div id="hobbies" className='about-overviews'>

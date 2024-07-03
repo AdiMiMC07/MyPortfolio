@@ -11,6 +11,7 @@ import safari from './safari.svg'
 import mail from './mail_app.svg'
 import settings from './settings.svg'
 import profile from './profile.png'
+import macs_dtu from './macs_dtu.png'
 const images = {
     decyber:decyber,
     weatherguide:weatherguide,
@@ -18,6 +19,7 @@ const images = {
     notesman:notesman,
     tagit:tagit,
     textutils:textutils,
+    macs_dtu:macs_dtu,
     icons:{
         terminal:terminal,
         vscode:vscode,

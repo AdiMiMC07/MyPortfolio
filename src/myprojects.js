@@ -42,6 +42,13 @@ const projs = [
         github:"https://github.com/AdiMiMC07/TextUtility-React",
         live:"https://textutils-by-aditya-mishra.netlify.app",
         img:images.textutils
-    }
+    },
+    {
+        title:"MACS-DTU",
+        desc:"MACS DTU is the official society of Department of Applied Mathematics, DTU",
+        github:"https://github.com/Aman-0604/MACS",
+        live:"https://macsdtu.vercel.app/",
+        img:images.macs_dtu
+    },
 ]
 export default projs;
